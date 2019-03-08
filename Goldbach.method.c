@@ -1,5 +1,4 @@
-#include "es1C.h"
-
+//used to find prime number
 int nump(int n){
 	int supp = 2;
 		if(n==2){
@@ -7,13 +6,13 @@ int nump(int n){
 		}	
 	while(supp < n){
 		if((n%supp)==0){
-			return 0;
+			return 0; //if the number isn't prime return 0
 		}
 		supp++;
 	}
-	return supp;
+	return supp; //if the number is prime return n
 }
-
+//Goldbach function
 int goldbach(int n) {
 	int p1;
 	int p2;
